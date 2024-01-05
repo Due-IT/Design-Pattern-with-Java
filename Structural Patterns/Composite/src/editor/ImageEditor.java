@@ -1,5 +1,7 @@
 package editor;
 
+import shapes.CompoundShape;
+
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
@@ -8,7 +10,7 @@ import java.awt.event.MouseEvent;
 
 public class ImageEditor {
     private EditorCanvas canvas;
-    private CompundShape allShapes = new CompundShape();
+    private CompoundShape allShapes = new CompoundShape()
 
     public ImageEditor(){
         canvas = new EditorCanvas();
