@@ -2,7 +2,7 @@ package shapes;
 
 import java.awt.*;
 
-abstract class BaseShape implements Shape{
+abstract class BaseShape implements Shape {
     public int x;
     public int y;
     public Color color;
@@ -77,6 +77,7 @@ abstract class BaseShape implements Shape{
         Graphics2D g2 = (Graphics2D) graphics;
         g2.setStroke(new BasicStroke());
     }
+
 
     @Override
     public void paint(Graphics graphics) {
