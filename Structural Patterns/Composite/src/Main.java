@@ -11,10 +11,10 @@ public class Main {
     public static void main(String[] args) {
         ImageEditor editor = new ImageEditor();
 
-        editor.loadShapes(
+        editor.loadShapes(  //복합체 생성
                 new Circle(10, 10, 10, Color.BLUE),
 
-                new CompoundShape(
+                new CompoundShape(  //복합체의 핵심 클래스
                         new Circle(110, 110, 50, Color.RED),
                         new Dot(160, 160, Color.RED)
                 ),
