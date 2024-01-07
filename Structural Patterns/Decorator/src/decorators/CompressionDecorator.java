@@ -26,7 +26,7 @@ public class CompressionDecorator extends DataSourceDecorator{
 
     @Override
     public void writeData(String data) {
-        super.writeData(compress(data));
+        super.writeData(compress(data));    //상속중인 클래스의 writeData를 사용하므로 현재 객체의 인스턴스가 참조하는 객체의 writeData메서드를 다시 불러옴
     }
 
     @Override

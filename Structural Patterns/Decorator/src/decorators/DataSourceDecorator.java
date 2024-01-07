@@ -1,7 +1,7 @@
 package decorators;
 
 public class DataSourceDecorator implements DataSource{
-    private DataSource wrappee; //상속하는 객체를 재참조?
+    private DataSource wrappee; //감싸는 객체를 참조
 
     DataSourceDecorator(DataSource source) {
         this.wrappee = source;
