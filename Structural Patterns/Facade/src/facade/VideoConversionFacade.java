@@ -1,5 +1,7 @@
 package facade;
 
+import some_complex_mdeia_library.*;
+
 import java.io.File;
 
 public class VideoConversionFacade {
