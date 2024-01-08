@@ -4,6 +4,10 @@ import some_complex_mdeia_library.*;
 
 import java.io.File;
 
+/*
+퍼사드 패턴의 핵심.
+하위 시스템의 복잡하고 정교한 기능들을 조합해 클라이언트가 사용하기 편하도록 기능을 제공한다.
+*/
 public class VideoConversionFacade {
     public File convertVideo(String fileName, String format){
         System.out.println("VideoConversionFacade: conversion started.");
