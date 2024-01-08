@@ -1,6 +1,7 @@
 package forest;
 
 import trees.Tree;
+import trees.TreeFactory;
 import trees.TreeType;
 
 import javax.swing.*;
@@ -18,10 +19,11 @@ public class Forest extends JFrame {
         trees.add(tree);
     }
 
-    public void plantTree(int x, int y, String name, Color color, String otherTreeData) {
-        TreeType type = TreeFactory.getTreeType(name, color, otherTreeData);
-        Tree tree = new Tree(x, y, type);
-        trees.add(tree);
+    @Override
+    public void paint(Graphics graphics) {
+        for (Tree tree : trees) {
+            tree.draw(graphics);
+        }
     }
 
 }
