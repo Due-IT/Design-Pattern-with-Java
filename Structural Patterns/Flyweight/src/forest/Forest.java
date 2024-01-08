@@ -1,7 +1,12 @@
 package forest;
 
+import trees.Tree;
+import trees.TreeType;
+
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Forest extends JFrame {
     private List<Tree> trees = new ArrayList<>();

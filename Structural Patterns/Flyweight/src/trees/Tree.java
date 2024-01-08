@@ -8,7 +8,7 @@ public class Tree {
      */
     private int x;
     private int y;
-    private TreeType type;
+    private TreeType type; //참조를 이용해 공유 상태 저장
 
     public Tree(int x, int y, TreeType type) {
         this.x = x;
