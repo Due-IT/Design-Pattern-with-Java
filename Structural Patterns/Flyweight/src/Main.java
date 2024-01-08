@@ -1,3 +1,5 @@
+import forest.Forest;
+
 import java.awt.*;
 
 public class Main {
