@@ -14,7 +14,7 @@ public class Server {
     }
 
     public boolean logIn(String email, String password) {
-        if (middleware.check(email, password)) {
+        if (middleware.check(email, password)) { //Main코드에 의하면 middleware = ThrottlingMiddleware
             System.out.println("Authorization have been successful!");
 
             // Do something useful here for authorized users.
