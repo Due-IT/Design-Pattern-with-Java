@@ -1,5 +1,7 @@
 import middleware.Middleware;
+import middleware.RoleCheckMiddleware;
 import middleware.ThrottlingMiddleware;
+import middleware.UserExistsMiddleware;
 import server.Server;
 
 import java.io.BufferedReader;
