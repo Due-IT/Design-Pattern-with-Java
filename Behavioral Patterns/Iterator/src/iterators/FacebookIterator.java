@@ -6,7 +6,7 @@ import social_networks.Facebook;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FacebookIerator implements ProfileIterator{
+public class FacebookIterator implements ProfileIterator{
     private Facebook facebook;
     private String type;
     private String email;
