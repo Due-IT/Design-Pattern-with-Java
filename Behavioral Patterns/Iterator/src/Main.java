@@ -1,5 +1,6 @@
 import profile.Profile;
 import social_networks.Facebook;
+import social_networks.LinkedIn;
 import social_networks.SocialNetwork;
 
 import java.util.ArrayList;
