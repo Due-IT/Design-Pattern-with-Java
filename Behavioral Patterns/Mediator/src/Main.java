@@ -1,3 +1,4 @@
+import mediator.Editor;
 import mediator.Mediator;
 
 public class Main {
