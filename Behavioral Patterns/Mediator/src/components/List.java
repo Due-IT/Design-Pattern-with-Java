@@ -1,6 +1,7 @@
 package components;
 
 import mediator.Mediator;
+import mediator.Note;
 
 import javax.swing.*;
 

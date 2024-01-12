@@ -1,6 +1,10 @@
 package mediator;
 
-public interface Mediator {
+import components.Component;
+
+import javax.swing.*;
+
+public interface Mediator { //구상 중재자
     void addNewNote(Note note);
     void deleteNote();
     void getInfoFromList(Note note);

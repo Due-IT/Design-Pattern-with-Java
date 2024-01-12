@@ -1,6 +1,15 @@
 package mediator;
 
-public class Editor implements Mediator{
+
+import components.*;
+import components.Component;
+import components.List;
+
+import javax.swing.*;
+import javax.swing.border.LineBorder;
+import java.awt.*;
+
+public class Editor implements Mediator{ //중재자의 구현
     private Title title;
     private TextBox textBox;
     private AddButton add;
@@ -14,7 +23,7 @@ public class Editor implements Mediator{
     private JLabel label = new JLabel("Add or select existing note to proceed...");
 
     @Override
-    public void registerComponent(Component component) {
+    public void registerComponent(Component component) { //구현한 에디터 중재자에 요소들을 주입한다.
         component.setMediator(this);
         switch (component.getName()) {
             case "AddButton":

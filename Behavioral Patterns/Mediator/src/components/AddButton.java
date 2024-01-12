@@ -1,12 +1,13 @@
 package components;
 
 import mediator.Mediator;
+import mediator.Note;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
 public class AddButton extends JButton implements Component{
-    private Mediator mediator;
+    private Mediator mediator;  //컴포넌트도 중재자를 참조
 
     public AddButton() {
         super("Add");
