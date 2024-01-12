@@ -1,6 +1,10 @@
 package social_networks;
 
+import iterators.ProfileIterator;
+import profile.Profile;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class Facebook implements SocialNetwork{
     private List<Profile> profiles;
@@ -14,24 +18,16 @@ public class Facebook implements SocialNetwork{
     }
 
     public Profile requestProfileFromFacebook(String profileEmail) {
-        // Here would be a POST request to one of the Facebook API endpoints.
-        // Instead, we emulates long network connection, which you would expect
-        // in the real life...
         simulateNetworkLatency();
         System.out.println("Facebook: Loading profile '" + profileEmail + "' over the network...");
 
-        // ...and return test data.
         return findProfile(profileEmail);
     }
 
     public List<String> requestProfileFriendsFromFacebook(String profileEmail, String contactType) {
-        // Here would be a POST request to one of the Facebook API endpoints.
-        // Instead, we emulates long network connection, which you would expect
-        // in the real life...
         simulateNetworkLatency();
         System.out.println("Facebook: Loading '" + contactType + "' list of '" + profileEmail + "' over the network...");
 
-        // ...and return test data.
         Profile profile = findProfile(profileEmail);
         if (profile != null) {
             return profile.getContacts(contactType);
