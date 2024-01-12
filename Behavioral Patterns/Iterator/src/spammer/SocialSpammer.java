@@ -14,7 +14,7 @@ public class SocialSpammer {
 
     public void sendSpamToFriends(String profileEmail, String message) {
         System.out.println("\nIterating over friends...\n");
-        iterator = network.createFriendsIterator(profileEmail);
+        iterator = network.createFriendsIterator(profileEmail); //반복자 패턴의 핵심. 반복을 위한 객체 생성
         while (iterator.hasNext()) {
             Profile profile = iterator.getNext();
             sendMessage(profile.getEmail(), message);

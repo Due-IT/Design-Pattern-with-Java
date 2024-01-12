@@ -32,7 +32,7 @@ public class Main {
                 "Hey! This is Anna's boss Jason. Anna told me you would be interested in [link].");
     }
 
-    public static List<Profile> createTestProfiles() {
+    public static List<Profile> createTestProfiles() {  //네트워크를 더미 데이터로 구현, 객체 생성시 파싱까지 처리
         List<Profile> data = new ArrayList<Profile>();
         data.add(new Profile("anna.smith@bing.com", "Anna Smith", "friends:mad_max@ya.com", "friends:catwoman@yahoo.com", "coworkers:sam@amazon.com"));
         data.add(new Profile("mad_max@ya.com", "Maximilian", "friends:anna.smith@bing.com", "coworkers:sam@amazon.com"));

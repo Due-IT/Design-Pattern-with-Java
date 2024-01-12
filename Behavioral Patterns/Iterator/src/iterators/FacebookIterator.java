@@ -20,7 +20,7 @@ public class FacebookIterator implements ProfileIterator{
         this.email = email;
     }
 
-    private void lazyLoad() {
+    private void lazyLoad() { //단순 지연 메서드가 아님. 로딩하여 관련 타입의 프로필을 불러옴
         if (emails.size() == 0) {
             List<String> profiles = facebook.requestProfileFriendsFromFacebook(this.email, this.type);
             for (String profile : profiles) {
@@ -32,7 +32,7 @@ public class FacebookIterator implements ProfileIterator{
 
     @Override
     public boolean hasNext() {
-        lazyLoad();
+        lazyLoad(); //정보를 불러옴. 지연을 표현
         return currentPosition < emails.size();
     }
 
