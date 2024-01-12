@@ -1,5 +1,6 @@
 package social_networks;
 
+import iterators.FacebookIterator;
 import iterators.ProfileIterator;
 import profile.Profile;
 

@@ -1,5 +1,6 @@
 package social_networks;
 
+import iterators.LinkedInIterator;
 import iterators.ProfileIterator;
 import profile.Profile;
 

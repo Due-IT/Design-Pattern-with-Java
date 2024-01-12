@@ -2,7 +2,7 @@ package iterators;
 
 import profile.Profile;
 
-public class ProfileIterator {
+public interface ProfileIterator {
     boolean hasNext();
 
     Profile getNext();

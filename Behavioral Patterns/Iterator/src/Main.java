@@ -2,6 +2,7 @@ import profile.Profile;
 import social_networks.Facebook;
 import social_networks.LinkedIn;
 import social_networks.SocialNetwork;
+import spammer.SocialSpammer;
 
 import java.util.ArrayList;
 import java.util.List;
