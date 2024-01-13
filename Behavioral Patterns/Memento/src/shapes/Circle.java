@@ -1,5 +1,7 @@
 package shapes;
 
+import java.awt.*;
+
 public class Circle extends BaseShape {
     private int radius;
 
