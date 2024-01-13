@@ -1,3 +1,8 @@
+import editor.Editor;
+import shapes.Circle;
+
+import java.awt.*;
+
 public class Main {
     public static void main(String[] args) {
         Editor editor = new Editor();
