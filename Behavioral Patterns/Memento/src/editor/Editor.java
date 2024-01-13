@@ -1,5 +1,8 @@
 package editor;
 
+import shapes.CompoundShape;
+import shapes.Shape;
+
 import javax.swing.*;
 
 public class Editor extends JComponent {

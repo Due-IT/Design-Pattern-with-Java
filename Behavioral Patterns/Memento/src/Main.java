@@ -1,5 +1,7 @@
 import editor.Editor;
 import shapes.Circle;
+import shapes.CompoundShape;
+import shapes.Dot;
 
 import java.awt.*;
 
