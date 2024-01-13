@@ -1,5 +1,7 @@
 package shapes;
 
+import java.awt.*;
+
 public class Rectangle extends BaseShape {
     private int width;
     private int height;
