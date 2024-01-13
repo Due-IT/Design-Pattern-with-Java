@@ -5,7 +5,7 @@ import commands.Command;
 import java.util.ArrayList;
 import java.util.List;
 
-public class History {
+public class History { //케어 테이커
     private List<Pair> history = new ArrayList<Pair>();
     private int virtualSize = 0;
 

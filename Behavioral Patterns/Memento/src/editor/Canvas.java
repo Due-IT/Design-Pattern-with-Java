@@ -48,10 +48,10 @@ class Canvas extends java.awt.Canvas {
             public void keyPressed(KeyEvent e) {
                 if ((e.getModifiers() & KeyEvent.CTRL_MASK) != 0) {
                     switch (e.getKeyCode()) {
-                        case KeyEvent.VK_Z:
+                        case KeyEvent.VK_Z: //Ctrl+Z
                             editor.undo();
                             break;
-                        case KeyEvent.VK_R:
+                        case KeyEvent.VK_R: //Ctrl+R
                             editor.redo();
                             break;
                     }
@@ -69,7 +69,7 @@ class Canvas extends java.awt.Canvas {
                 }
                 Shape target = editor.getShapes().getChildAt(e.getX(), e.getY());
                 if (target != null) {
-                    editor.execute(new ColorCommand(editor, new Color((int) (Math.random() * 0x1000000))));
+                    editor.execute(new ColorCommand(editor, new Color((int) (Math.random() * 0x1000000)))); //마우스 특수 버튼 클릭시 색 변경 및 메멘토 생성
                     repaint();
                 }
             }
@@ -132,7 +132,7 @@ class Canvas extends java.awt.Canvas {
                     return;
                 }
                 moveCommand.stop(e.getX(), e.getY());
-                editor.execute(moveCommand);
+                editor.execute(moveCommand); //마우스 내려 놓았을때 메멘토 생성
                 this.moveCommand = null;
                 repaint();
             }

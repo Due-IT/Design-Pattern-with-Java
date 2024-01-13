@@ -30,7 +30,7 @@ public class Editor extends JComponent {
         return allShapes;
     }
 
-    public void execute(Command c) {
+    public void execute(Command c) {    //메멘토를 생성해서 히스토리에 저장
         history.push(c, new Memento(this));
         c.execute();
     }
@@ -45,7 +45,7 @@ public class Editor extends JComponent {
             canvas.repaint();
     }
 
-    public String backup() {
+    public String backup() { //allShapes 객체의 상태를 바이트스트림 > 문자열로 변환하여 반환한다.
         try {
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             ObjectOutputStream oos = new ObjectOutputStream(baos);
