@@ -1,5 +1,8 @@
 package shapes;
 
+import java.awt.*;
+import java.io.Serializable;
+
 public interface Shape extends Serializable {
     int getX();
     int getY();
