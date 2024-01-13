@@ -1,4 +1,4 @@
-package command;
+package commands;
 
 public interface Command {
     String getName();

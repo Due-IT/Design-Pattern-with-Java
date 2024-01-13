@@ -2,6 +2,7 @@ import editor.Editor;
 import shapes.Circle;
 import shapes.CompoundShape;
 import shapes.Dot;
+import shapes.Rectangle;
 
 import java.awt.*;
 

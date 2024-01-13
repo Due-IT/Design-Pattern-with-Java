@@ -1,4 +1,4 @@
-package command;
+package commands;
 
 import editor.Editor;
 import shapes.Shape;

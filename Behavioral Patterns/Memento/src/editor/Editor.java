@@ -1,9 +1,14 @@
 package editor;
 
+import commands.Command;
+import history.History;
+import history.Memento;
 import shapes.CompoundShape;
 import shapes.Shape;
 
 import javax.swing.*;
+import java.io.*;
+import java.util.Base64;
 
 public class Editor extends JComponent {
     private Canvas canvas;

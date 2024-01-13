@@ -1,6 +1,14 @@
 package editor;
 
+import commands.ColorCommand;
+import commands.MoveCommand;
+import shapes.Shape;
+
 import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.image.BufferedImage;
 
 class Canvas extends java.awt.Canvas {
     private Editor editor;
