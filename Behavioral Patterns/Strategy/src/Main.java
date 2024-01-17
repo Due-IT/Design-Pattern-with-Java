@@ -54,13 +54,13 @@ public class Main {
                 }
             }
 
-            order.processOrder(strategy); //결제 진행
+            order.processOrder(strategy); //결제 수단에 관한 정보 받아오기
 
             System.out.print("Pay " + order.getTotalCost() + " units or Continue shopping? P/C: ");
             String proceed = reader.readLine();
             if (proceed.equalsIgnoreCase("P")) {
                 // Finally, strategy handles the payment.
-                if (strategy.pay(order.getTotalCost())) { //결제 성공 여부
+                if (strategy.pay(order.getTotalCost())) { //결제 수단으로 결제 진행 및 성공 여부
                     System.out.println("Payment has been successful.");
                 } else {
                     System.out.println("FAIL! Please, check your data.");

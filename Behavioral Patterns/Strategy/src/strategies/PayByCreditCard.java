@@ -30,7 +30,7 @@ public class PayByCreditCard implements PayStrategy {
     public boolean pay(int paymentAmount) {
         if (cardIsPresent()) {
             System.out.println("Paying " + paymentAmount + " using Credit Card.");
-            card.setAmount(card.getAmount() - paymentAmount);
+            card.setAmount(card.getAmount() - paymentAmount); //돈이 충분한지에 대한 예외처리는 없네
             return true;
         } else {
             return false;
