@@ -18,9 +18,6 @@ public class PayByPayPal implements PayStrategy {
         DATA_BASE.put("qwerty", "john@amazon.eu");
     }
 
-    /**
-     * Collect customer's data.
-     */
     @Override
     public void collectPaymentDetails() {
         try {
@@ -45,9 +42,6 @@ public class PayByPayPal implements PayStrategy {
         return signedIn;
     }
 
-    /**
-     * Save customer data for future shopping attempts.
-     */
     @Override
     public boolean pay(int paymentAmount) {
         if (signedIn) {
