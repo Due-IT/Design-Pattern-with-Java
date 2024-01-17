@@ -26,7 +26,7 @@ public class Main {
             int cost;
 
             String continueChoice;
-            do {
+            do { //무엇을 살건지 결정
                 System.out.print("Please, select a product:" + "\n" +
                         "1 - Mother board" + "\n" +
                         "2 - CPU" + "\n" +
@@ -41,14 +41,12 @@ public class Main {
                 continueChoice = reader.readLine();
             } while (continueChoice.equalsIgnoreCase("Y"));
 
-            if (strategy == null) {
+            if (strategy == null) { //결제수단 선택
                 System.out.println("Please, select a payment method:" + "\n" +
                         "1 - PalPay" + "\n" +
                         "2 - Credit Card");
                 String paymentMethod = reader.readLine();
 
-                // Client creates different strategies based on input from user,
-                // application configuration, etc.
                 if (paymentMethod.equals("1")) {
                     strategy = new PayByPayPal();
                 } else {
@@ -56,16 +54,13 @@ public class Main {
                 }
             }
 
-            // Order object delegates gathering payment data to strategy object,
-            // since only strategies know what data they need to process a
-            // payment.
-            order.processOrder(strategy);
+            order.processOrder(strategy); //결제 진행
 
             System.out.print("Pay " + order.getTotalCost() + " units or Continue shopping? P/C: ");
             String proceed = reader.readLine();
             if (proceed.equalsIgnoreCase("P")) {
                 // Finally, strategy handles the payment.
-                if (strategy.pay(order.getTotalCost())) {
+                if (strategy.pay(order.getTotalCost())) { //결제 성공 여부
                     System.out.println("Payment has been successful.");
                 } else {
                     System.out.println("FAIL! Please, check your data.");
