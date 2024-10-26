@@ -1,8 +1,9 @@
 package buttons;
 
-public class MacOSButton implements Button{
+public class MacOSButton implements Button {
+
     @Override
-    public void paint(){
+    public void paint() {
         System.out.println("Paint MacOSButton");
     }
 }

@@ -4,20 +4,20 @@ import factories.MacOSFactory;
 import factories.WindowsFactory;
 
 public class Main {
+
     public static void main(String[] args) {
         Application app = configureApplication();
         app.paint();
-
     }
 
-    private static Application configureApplication(){
+    private static Application configureApplication() {
         Application app;
         GUIFactory factory;
 
         String osName = System.getProperty("os.name").toLowerCase();
-        if(osName.contains("mac")){
+        if (osName.contains("mac")) {
             factory = new MacOSFactory();
-        }else{
+        } else {
             factory = new WindowsFactory();
         }
         app = new Application(factory);

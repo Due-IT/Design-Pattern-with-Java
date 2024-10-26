@@ -5,7 +5,8 @@ import buttons.WindowsButton;
 import checkboxes.Checkbox;
 import checkboxes.WindowsCheckbox;
 
-public class WindowsFactory implements GUIFactory{
+public class WindowsFactory implements GUIFactory {
+
     @Override
     public Button createButton() {
         return new WindowsButton();

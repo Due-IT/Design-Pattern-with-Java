@@ -5,9 +5,10 @@ import buttons.MacOSButton;
 import checkboxes.Checkbox;
 import checkboxes.MacOSCheckbox;
 
-public class MacOSFactory implements GUIFactory{
+public class MacOSFactory implements GUIFactory {
+
     @Override
-    public Button createButton(){
+    public Button createButton() {
         return new MacOSButton();
     }
 
