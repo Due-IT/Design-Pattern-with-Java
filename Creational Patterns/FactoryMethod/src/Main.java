@@ -11,7 +11,7 @@ public class Main {
 
     static void configure(){
         if(System.getProperty("os.name").equals("Windows 11")){
-            dialog = new WindowsDialog();
+            dialog = new WindowsDialog(); // 클라이언트는 해당 구성설정만을 알고 있다.
         }
         else{
             dialog = new HtmlDialog();
