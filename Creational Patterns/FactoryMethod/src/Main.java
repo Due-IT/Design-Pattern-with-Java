@@ -19,6 +19,6 @@ public class Main {
     }
 
     static void runBusinessLogic(){
-        dialog.renderWindow();
+        dialog.renderWindow(); // 윈도우 또는 HTML 다이얼로그를 띄운다. 구체적인 다이얼로그는 구현체에 의해 결정됨.
     }
 }
