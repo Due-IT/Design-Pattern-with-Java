@@ -1,3 +1,7 @@
+import downloader.YouTubeDownloader;
+import proxy.YouTubeCacheProxy;
+import some_cool_media_library.ThirdPartyYouTubeClass;
+
 public class Main {
 
     public static void main(String[] args) {

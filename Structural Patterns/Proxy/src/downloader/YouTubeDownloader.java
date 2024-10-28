@@ -1,6 +1,8 @@
 package downloader;
 
+import java.util.HashMap;
 import some_cool_media_library.ThirdPartyYouTubeLib;
+import some_cool_media_library.Video;
 
 public class YouTubeDownloader {
 
