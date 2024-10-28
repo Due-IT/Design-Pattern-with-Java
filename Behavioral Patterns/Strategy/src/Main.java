@@ -47,7 +47,7 @@ public class Main {
                         "2 - Credit Card");
                 String paymentMethod = reader.readLine();
 
-                if (paymentMethod.equals("1")) {
+                if (paymentMethod.equals("1")) { //핵심. 런타임에 결제 수단을 선택할 수 있다.
                     strategy = new PayByPayPal();
                 } else {
                     strategy = new PayByCreditCard();
